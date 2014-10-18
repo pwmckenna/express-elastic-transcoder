@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <tbody>
+    {{#each jobs}}
+        <tr class="{{statusClass Status}}">
+            <td>{{Input.Key}}</td>
+            {{#each Outputs}}
+                <td>{{Key}}</td>
+                <td>{{Status}}</td>
+                <td>{{StatusDetail}}</td>
+            {{/each}}
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
